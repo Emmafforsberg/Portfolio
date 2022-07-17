@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* skills in side-menu */
+.skill {
+  position: relative;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  top: 1px;
+  left: 0;
+  padding: 0.8rem 0rem;
+  background: #383838;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.skill:hover .overlay {
+  width: 200%;
+  border: 1px solid #fffb8d;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0rem;
+  color: #a2a2a2;
+  font-family: Raleway, Avenir Next, Avenir, sans-serif;
+}
+
+/* Skill circles */
+.box {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  border: 0.1rem solid #a2a2a2;
+}
+
+.text {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  padding: 0.8rem 0rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}/*# sourceMappingURL=side-menu__specials.css.map */

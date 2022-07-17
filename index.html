@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma Forsberg</title>
+    <link rel="shortcut icon" href="./images/code-svgrepo.svg"
+        type="image/x-icon">
+    <meta name="Emma Forsberg" content="A portfolio / Digital CV">
+    <link rel="stylesheet" type="text/css" href="./assets/./style.css">
+    <link rel="stylesheet" type="text/css"
+        href="./assets/side-menu__specials.css">
+    <script src="https://kit.fontawesome.com/78f27aedf1.js"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Wrapper ( ll content) -->
+    <div class="wrapper">
+        <!-- Mobile-bar/Mobile-header -->
+        <div class="mobile-bar" id="mobileBar">
+            <div class="mobile-wrapper">
+                <img class="mobile-bar__img" src="./images/Bild_12.jpg"
+                    alt="image of me">
+                <div class="mobile-bar__text">
+                    <h1> Emma Forsberg</h1>
+                    <h5>Webbutvecklare & webbdesigner</h5>
+                    <div class="mobile-bar__information">
+                        <div class="mobile-bar__mail">
+                            <i class="fa-solid fa-at"></i><a
+                                href="mailto:emmafforsberg@gmail.com?subject=Angående ditt digitala CV&body=Hej Emma!">emmafforsberg@gmail.com
+                            </a>
+                        </div>
+                        <div class="mobile-wrapper__line">|
+                        </div>
+
+
+                        <div class="mobile-bar__location">
+                            <p><span><i class="fa-solid fa-map-pin"></i></span>
+                                Kalmar
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <hr class="menu-divider">
+            <div class="mobile">
+                <ul class="mobile__menu" id="mobileView">
+                    <li class="mobile__item"><a
+                            href="./projekt.html">Projekt</a>
+                    </li>
+                    <li class="mobile__item"><a href="#profil">Profil</a></li>
+                    <li class="mobile__item"><a href="#skills">Kunskap</a></li>
+                    <li class="mobile__item"><a href="#arbete">Arbete</a> </li>
+                    <li class="mobile__item"><a href="#referens">Referenser</a>
+                    </li>
+                    <li class="mobile__item"><a
+                            href="#utbildning">Utbildning</a>
+                    </li>
+                    <li class="mobile__item"><a href="#intressen">Intressen</a>
+                    </li>
+
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="side__bar"
+                onclick="myFunction(); menuIcon()">
+                Meny <i class="fa-solid fa-chevron-down" id="down"></i>
+
+            </a>
+        </div>
+        <!-- side/ Aside -->
+        <div class="side">
+
+            <img class="side__image" src="./images/Bild_12.jpg"
+                alt="image of me">
+            <h5> Webdesigner & Webbutvecklare</h5>
+            <div id="side__menu">
+
+                <a class="side__item" href="#profil">Profil</a>
+                <a class="side__item" href="#arbete">Arbete</a>
+                <a class="side__item" href="#referens">Referenser</a>
+                <a class="side__item" href="#utbildning">Utbildning</a>
+                <a class="side__item" href="#intressen">Intressen</a>
+                <a class="side__item" href="./projekt.html">Projekt ></a>
+            </div>
+
+            <div class="side__information">
+
+                <h3 class="side__title">Kontakt</h3>
+                <hr>
+                <div class="side__address">
+                    <div class="side__mail">
+                        <i class="fa-solid fa-at"></i><a
+                            href="mailto:emmafforsberg@gmail.com?subject=Angående ditt digitala CV&body=Hej Emma!">emmafforsberg@gmail.com
+                        </a>
+                    </div>
+                    <div class="side__location">
+                        <p><i class="fa-solid fa-map-pin"></i>
+                            Kalmar
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <h3 class="side__title">Kunskap</h3>
+                <hr>
+
+                <div class="skill">
+                    <div class="box">
+                    </div>
+                    <p>HTML</p>
+                    <div class="overlay">
+                        <div class="text">Mycket goda kunskaper</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="box">
+                    </div>
+                    <p>CSS</p>
+                    <div class="overlay">
+                        <div class="text">Mycket goda kunskaper</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="box">
+                    </div>
+                    <p>SASS</p>
+                    <div class="overlay">
+                        <div class="text">Goda kunskaper</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="box">
+                    </div>
+                    <p>Bootstrap</p>
+                    <div class="overlay">
+                        <div class="text">Goda kunskaper</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="box">
+                    </div>
+                    <p>JavaScript</p>
+                    <div class="overlay">
+                        <div class="text">Basic kunskap</div>
+                    </div>
+                </div>
+
+                <h3 class="side__title">Social media</h3>
+                <hr>
+                <div class="side__social">
+                    <i class="fa-brands fa-facebook"> <a
+                            href="https://www.facebook.com/emma.forsberg.986"
+                            target="_blank">Facebook</a></i>
+                    <i class="fa-brands fa-instagram"> <a
+                            href="https://www.instagram.com/emmafforsberg/"
+                            target="_blank">Instagram</a></i>
+                    <i class=" fa-brands fa-linkedin"> <a
+                            href="https://www.linkedin.com/in/emma-forsberg-8b83ba136/"
+                            target="_blank">LinkedIn</a></i>
+                    <i class=" fa-brands fa-github"> <a
+                            href="https://github.com/Emmafforsberg?tab=repositories"
+                            target="_blank">Github</a></i>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Main content -->
+        <div class=" main">
+            <!-- Go to top-button -->
+            <button onclick="topFunction()" id="topBtn" title="Go to top"><i
+                    class="fa-solid fa-chevron-up"></i></button>
+
+            <!-- container (main text) -->
+            <div class="container">
+                <h1 class="container__title--first">
+                    Emma <br>
+                    <hr> Forsberg
+                </h1>
+                <!-- container > Profile -->
+                <div class="container__section" id="profil">
+                    <h2 class="container__title">Profil
+                    </h2>
+                    <p class="container__text">Jag söker
+                        alltid efter en ny
+                        utmaning, och jag är redo
+                        att kämpa för det. Som person
+                        har jag
+                        lätt att lära, jag gillar att
+                        vara social samt lära
+                        känna nya
+                        människor och jag vill alltid
+                        förbättra mig inom mitt valda
+                        yrke.
+                    </p>
+
+                    <p class="container__text">När mina
+                        vänner, kollegor och
+                        arbetsgivare beskriver mig
+                        som person, får jag ofta höra
+                        att jag är/har:
+                    <ul class="main__list">
+                        <li class="main__item">En
+                            välditgt pålitlig person
+                        </li>
+                        <li class="main__item">Har en
+                            lättsam personlighet
+                        </li>
+                        <li class="main__item">Hög
+                            arbetsmoral</li>
+                        <li class="main__item">En person
+                            som aldrig ger upp
+                        </li>
+                    </ul>
+                    <p class="container__text">Det jag
+                        söker efter är en
+                        plats
+                        inom IT där jag kan växa
+                        och kontinuerligt lära mig mer
+                        inom mitt
+                        valda yrke.</p>
+                </div>
+                <!-- container > skills -->
+                <div class="container__section container__section--skills"
+                    id="skills">
+                    <!-- HTML -->
+                    <h2 class="container__title">Kunskap
+                    </h2>
+                    <div class="kunskap">
+                        <!-- HTML -->
+                        <h4 class="container__subtitle">
+                            HTML
+                        </h4>
+                        <div class="dots-wrapper">
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div
+                                class="dots-wrapper__dots dots-wrapper__dots--half">
+                                <div class="dots-wrapper__half">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="kunskap__text"> Mycket
+                            goda Kunskaper</p>
+                    </div>
+                    <!-- CSS -->
+                    <div class="kunskap">
+                        <h4 class="container__subtitle">
+                            CSS
+                        </h4>
+                        <div class="dots-wrapper">
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div
+                                class="dots-wrapper__dots dots-wrapper__dots--empty">
+                                <div class="dots-wrapper__half">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="kunskap__text"> Mycket
+                            goda Kunskaper</p>
+                    </div>
+                    <!-- SASS -->
+                    <div class="kunskap">
+                        <h4 class="container__subtitle">
+                            SASS
+                        </h4>
+                        <div class="dots-wrapper">
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div
+                                class="dots-wrapper__dots dots-wrapper__dots--half">
+                                <div class="dots-wrapper__half">
+                                </div>
+                            </div>
+                            <div
+                                class="dots-wrapper__dots dots-wrapper__dots--empty">
+                            </div>
+                        </div>
+                        <p class="kunskap__text"> Mycket
+                            goda Kunskaper</p>
+                    </div>
+                    <!-- BOOTSTRAP -->
+                    <div class="kunskap">
+                        <h4 class="container__subtitle">
+                            Bootstrap
+                        </h4>
+                        <div class="dots-wrapper">
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div
+                                class="dots-wrapper__dots dots-wrapper__dots--empty">
+                            </div>
+                            <div
+                                class="dots-wrapper__dots dots-wrapper__dots--empty">
+                            </div>
+
+                        </div>
+                        <p class="kunskap__text"> Goda
+                            Kunskaper</p>
+                    </div>
+                    <!-- JAVASCRIPT -->
+                    <div class="kunskap">
+                        <h4 class="container__subtitle">
+                            JavaScript
+                        </h4>
+                        <div class="dots-wrapper">
+                            <div class="dots-wrapper__dots">
+                            </div>
+                            <div
+                                class="dots-wrapper__dots dots-wrapper__dots--half">
+                                <div class="dots-wrapper__half">
+                                </div>
+                            </div>
+                            <div
+                                class="dots-wrapper__dots dots-wrapper__dots--empty">
+                            </div>
+                            <div
+                                class="dots-wrapper__dots dots-wrapper__dots--empty">
+                            </div>
+                            <div
+                                class="dots-wrapper__dots dots-wrapper__dots--empty">
+                            </div>
+                        </div>
+                        <p class="kunskap__text"> Basic
+                            kunskap</p>
+                    </div>
+                </div>
+                <!-- container > Work -->
+                <div class="container__section" id="arbete">
+                    <h2 class="container__title">Arbete
+                    </h2>
+                    <h4 class="container__subtitle">
+                        Nordic Nest,
+                        Högsäsongsledare/lagerarbetare,
+                        2020 - ...
+                    </h4>
+                    <p class="container__text">När jag
+                        blev anställd på
+                        Nordic
+                        Nest blev jag placerad på
+                        pack-avdelningen.
+                        Efter ett antal månader blev jag
+                        förflyttad till
+                        utleverans-avdelningen och
+                        under hösten/vintern 2021 blev
+                        jag utsedd till
+                        ”högsäsongsledare” över
+                        utleverans-avdelningen.</p>
+                    <p class="container__text">Det
+                        innebar att jag skulle
+                        agera
+                        mellanchef och vara en
+                        sorts backup till ledaren/-na på
+                        avdelningen och i
+                        sin
+                        tur avlasta dom under den
+                        tuffaste perioden på året.
+                    </p>
+
+                    <p class="container__text"> På detta
+                        jobbet har jag lärt
+                        mig
+                        bland annat:
+                    <div class="container__traits">
+                        Stresshantering,
+                        problemlösning,
+                        vikten av kommunicering och
+                        effektivitet.</div>
+                    </p>
+                    <h4 class="container__subtitle">
+                        Svensk Dos,
+                        Maskinoperatör,
+                        2018- 2020
+                    </h4>
+                    <p class="container__text">Svensk
+                        Dos är ett företag som
+                        hjälper
+                        sjukhus/läkemedelsföretag
+                        distribuera
+                        mediciner i medicinpåsar som
+                        sedan skickas ut till
+                        kunder/vårdhem. Här var mina
+                        arbetsuppgifter fördelade på 5st
+                        olika stationer
+                        vilket
+                        har gjort mig till en
+                        mer lätt anpassad person.
+                    </p>
+
+                    <p class="container__text"> På detta
+                        jobbet har jag lärt
+                        mig
+                        bland annat:
+                    <div class="container__traits">
+                        Noggrannhet, snabbhet och
+                        anpassningsförmåga/multihantering.
+                    </div>
+                    </p>
+                    <h4 class="container__subtitle">
+                        ApoEx, Apoteksassistent,
+                        2015- 2017</h4>
+                    <p class="container__text">Under den
+                        här tiden jobbade
+                        jag
+                        på ett läkemedelslager
+                        med ca 10-15st anställda
+                        i Kalmar. Mina huvudsakliga
+                        sysslor var att scanna
+                        diverse läkemedel och skicka
+                        ut dem till olika
+                        sjukhus/vårdcentraler.
+                    </p>
+
+                    <p class="container__text"> På detta
+                        jobbet har jag lärt
+                        mig
+                        bland annat:
+                    <div class="container__traits">
+                        Teamwork, arbetsmoral och
+                        vikten
+                        att hålla en deadline.</div>
+                    </p>
+                </div>
+                <!-- container > Referens -->
+                <div class="personal">
+                    <div class="container__section--referens" id="referens">
+                        <h2 class="container__title">
+                            Referenser</h2>
+                        <div class="container__flex">
+                            <div class="container__flex--left">
+                                <h3 class="container__flex--title">
+                                    Lina
+                                    Örknér
+                                </h3>
+                                <p>Department lead</p>
+                                <p> 070 xxx xxx xx</p>
+                            </div>
+                            <div class="container__flex--right">
+                                <h3 class="container__flex--title">
+                                    Petter
+                                    Larsson
+                                </h3>
+                                <p>Department lead</p>
+                                <p> 070 xxx xxx xx</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="container__section--education" id="utbildning">
+                        <h2 class="container__title">
+                            Utbildning</h2>
+                        <div class="container__flex">
+                            <div class="container__flex--left">
+                                <h3 class="container__flex--title">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    Högskolan
+                                    Väst
+                                </h3>
+                                <p>Webmaster, 2018-2020
+                                </p>
+                                <p> Distans</p>
+                            </div>
+                            <div class="container__flex--right">
+                                <h3 class="container__flex--title">
+                                    <i class="fa-solid fa-book-open-reader"></i>
+                                    Stagneliusskolan
+                                </h3>
+                                <p>Samhälle/-media, 2011
+                                    - 2014</p>
+                                <p>Kalmar</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container__section--interest" id="intressen">
+                        <h2 class="container__title">
+                            Intressen</h2>
+                        <div class="interest">
+                            <div class="interest__section">
+                                <i class="fa-solid fa-dumbbell"></i>
+                                <p>Träna på gymmet och
+                                    hålla mig själv i
+                                    form
+                                </p>
+                            </div>
+                            <div class="interest__section">
+                                <i class="fa-solid fa-people-group"></i>
+                                <p>Umgås med vänner och
+                                    familj</p>
+                            </div>
+                            <div class="interest__section">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <p>Skapa hemsidor,
+                                    utveckla mina
+                                    kod-kunskaper
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <h4 class="author"> &copy; emmafforsberg 2022 - <span id="year"></span>
+        </h4>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

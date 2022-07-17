@@ -1,0 +1,612 @@
+/* TABLE OF CONTENT  (main)
+1. General settings (fonts, color)
+2. main
+  3. container
+  4. title-chalanges
+  5. projekt
+    6. content
+TABLE OF CONTENT */
+
+/* TABLE OF CONTENT  MEDIA QUERIES (950px)
+1. main & container (general stuff)
+2. container/projekt/side
+3. Mobile / Tablet view - (.mobile/.mobile-wrapper m.fl.)
+  4. title-chalanges
+  5. projekt
+    6. content
+
+
+TABLE OF CONTENT */
+
+/* TABLE OF CONTENT  MEDIA QUERIES (769px)
+1. main & container (general stuff)
+2. container/projekt/side
+3. Mobile / Tablet view - (.mobile/.mobile-wrapper m.fl.)
+  4. title-chalanges
+  5. projekt
+    6. content
+
+TABLE OF CONTENT */
+/* TABLE OF CONTENT  MEDIA QUERIES (600px)
+1.  Mobile / Tablet view - (.mobile/.mobile-wrapper m.fl.)
+2. Projekt
+3. Content
+ 
+TABLE OF CONTENT */
+
+/* * * * * * * * * * * * * */
+
+/* 1. General settings (fonts, color) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600&display=swap");
+
+$sideBackground: #383838;
+$sideColor: #fffb8d;
+$mainColor: #f5f5f5;
+$secondaryColor: #e2e2e2;
+$subTitle: #a2a2a2;
+$paragraph: #606060;
+
+@mixin mainFont {
+  font-family: Raleway, Avenir Next, Avenir, sans-serif;
+}
+
+@mixin secondFont {
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+}
+body {
+  background: $mainColor;
+}
+/* 2. main */
+.main {
+  padding: 0rem;
+  margin: 0rem;
+}
+/* 3. container */
+.container {
+  display: flex;
+  justify-content: center;
+  & h1 {
+    color: $sideBackground;
+    & hr {
+      width: auto;
+      border-radius: 60%;
+      $sideBackground: #919191;
+      border-color: $sideBackground;
+    }
+  }
+}
+/* 4. title-chalanges */
+.title-challanges {
+  @include secondFont;
+  margin: 2rem 2rem 0rem 2rem;
+  color: $subTitle;
+  & h4 {
+    font-weight: 500;
+  }
+}
+/* 5. projekt */
+.projekt {
+  @include mainFont;
+  margin: 0.5rem 2rem;
+  display: flex;
+  width: 90%;
+  height: fit-content;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-snap-align: start;
+  background: $sideBackground;
+  position: relative;
+  $subTitle: rgb(228, 228, 228);
+  border-right: 1px solid $subTitle;
+  border-left: 1px solid $subTitle;
+  & section {
+    padding: 1rem;
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 55vw;
+    height: 50vh;
+    scroll-snap-align: center;
+    background: $mainColor;
+  }
+}
+/* 6. content */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 15rem;
+
+  &__title {
+    font-size: 1.5vw;
+    width: fit-content;
+    text-transform: uppercase;
+  }
+  & a {
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: 1px wavy underline;
+      text-underline-position: under;
+    }
+  }
+  &__text {
+    margin: 1.5rem 0rem;
+    font-size: 1vw;
+    width: 85%;
+    a {
+      color: $subTitle;
+      text-transform: none;
+      text-underline-position: under;
+      &:active {
+        color: $sideBackground;
+      }
+    }
+  }
+  &__tools {
+    font-weight: 500;
+    color: $sideColor;
+    background: $sideBackground;
+  }
+
+  &__dark {
+    $sideBackground: #1a1a1a7e;
+    background: $sideBackground; /* Black see-through */
+    & a {
+      color: $mainColor;
+    }
+  }
+
+  &__light {
+    $mainColor: #ffffffd0;
+    background: $mainColor;
+    & a {
+      color: black;
+    }
+  }
+  &__right {
+    width: 70%;
+  }
+  &__left {
+    position: relative;
+    width: 100%;
+    &--overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      transition: 0.5s ease;
+      opacity: 0;
+      padding: 2%;
+      font-size: 2vh;
+      text-align: center;
+    }
+  }
+  &__left:hover > &__left--overlay {
+    opacity: 1;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    box-shadow: 2px 4px 10px 3px $paragraph;
+  }
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 950px) {
+  /* 1. main & container (general stuff) */
+  .main,
+  .container {
+    width: 100%;
+    & h4 {
+      line-height: normal;
+      letter-spacing: normal;
+      margin: initial;
+      width: 100%;
+    }
+  }
+  /* 2. container/projekt/side */
+  .container {
+    & h1 {
+      font-size: 5.5vw;
+    }
+  }
+  .projekt {
+    margin: 0.5rem 2rem 4rem 2rem;
+    & section {
+      padding: 2rem;
+      width: 80%;
+      height: 30%;
+    }
+    img {
+      box-shadow: 2px 3px 5px $paragraph;
+    }
+  }
+  .side {
+    display: none;
+  }
+
+  /* 3. Mobile / Tablet view - (.mobile/.mobile-wrapper m.fl.) */
+  .mobile-bar {
+    display: block;
+    height: 100%;
+    & img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 1rem 2rem;
+      display: inline;
+    }
+    &__text {
+      display: inline-block;
+      font-size: 2.5vw;
+    }
+  }
+  .mobile-wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    @include mainFont;
+    background: $sideBackground;
+    h1 {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-position: under;
+      letter-spacing: 0.2rem;
+
+      margin-bottom: 0.5rem;
+    }
+    & h1,
+    & h5,
+    & p {
+      text-transform: uppercase;
+      font-weight: 200;
+      text-align: center;
+    }
+    h1 {
+      font-size: 4vw;
+      color: $sideColor;
+    }
+    & h5 {
+      letter-spacing: 0.1rem;
+      font-size: 1.5vw;
+      color: $mainColor;
+      margin-bottom: 0.6rem;
+    }
+    & p {
+      font-size: 1.8vw;
+      padding: 0rem 0.2rem;
+      text-transform: none;
+      @include secondFont;
+      display: inline-block;
+      color: $mainColor;
+      &:first-of-type:hover {
+        color: $sideColor;
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+      &:first-of-type i {
+        font-weight: 400;
+        padding: 0rem 0.1rem;
+        @include secondFont;
+        &:hover {
+          text-decoration: underline;
+          text-underline-position: under;
+          cursor: pointer;
+          color: $sideColor;
+        }
+      }
+    }
+
+    &__line {
+      text-decoration: none;
+      font-weight: 100;
+      display: inline-block;
+      color: $mainColor;
+    }
+  }
+  .mobile {
+    display: block;
+    background: $sideBackground;
+  }
+  /* * * * MOBILE MENU * * * */
+
+  .mobile {
+    overflow: hidden;
+    position: relative;
+    &__menu {
+      text-align: center;
+    }
+    &__item {
+      display: inline-block;
+      padding: 0.3rem;
+      text-decoration: none;
+      margin: 1rem 0rem;
+      &:active {
+        border-top: 1px solid $mainColor;
+        border-bottom: 1px solid $mainColor;
+        padding: 0.3rem;
+      }
+      &:nth-child(1) {
+        border: 1px solid $sideColor;
+        padding: 0.3rem;
+        &:active,
+        &:active a {
+          color: $sideBackground;
+          background: $sideColor;
+        }
+      }
+      a {
+        @include mainFont;
+        font-size: 1.5vw;
+        padding: 0.4rem;
+        margin: 0rem 0.4rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        color: $sideColor;
+        &:active {
+          color: $mainColor;
+        }
+      }
+    }
+  }
+
+  .mobile-bar #mobileView {
+    display: none;
+  }
+
+  .mobile-bar {
+    & a.side__bar {
+      @include secondFont;
+      color: $sideBackground;
+      background: $sideColor;
+      font-weight: 400;
+      font-size: 1.5vw;
+      text-decoration: none;
+      padding: 0.2rem;
+      display: block;
+      position: absolute;
+      right: 0.5rem;
+      top: 9rem;
+    }
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    & .social {
+      display: flex;
+      justify-content: space-around;
+      font-size: 2.4vw;
+      padding: 1rem;
+      width: 30%;
+    }
+    & .author {
+      width: 50%;
+      font-size: 1.5vw;
+      border-right: 1px solid $subTitle;
+    }
+  }
+}
+@media only screen and (max-width: 769px) {
+  .container {
+    & h1 {
+      display: block;
+      margin-top: 1.5rem;
+    }
+  }
+  .projekt {
+    width: 85%;
+    padding: 0.8rem;
+    flex-wrap: wrap;
+    &__text {
+      width: 50%;
+    }
+    &__box {
+      width: 50%;
+    }
+    & section {
+      width: 100%;
+      margin: 1rem 0rem;
+      padding: 2rem;
+    }
+  }
+  .content {
+    flex-direction: column;
+    &__left,
+    &__right {
+      width: 100%;
+    }
+    & a {
+      text-decoration: none;
+      &:active {
+        color: $sideColor;
+        text-decoration: 1px wavy underline $sideColor;
+        text-underline-position: under;
+      }
+    }
+    &__light,
+    &__dark {
+      &:active {
+        background: $sideBackground;
+      }
+    }
+    &__left {
+      &--overlay {
+        opacity: 1;
+        margin: 0rem;
+      }
+    }
+    &__right {
+      margin: 1rem 0rem;
+      padding: 1rem 0rem;
+    }
+    & h1 {
+      font-size: 3vw;
+      margin-bottom: 2rem;
+    }
+    &__text {
+      margin: 0rem;
+      display: inline-block;
+      font-size: 1.4vw;
+      & a {
+        text-decoration: 1px wavy underline $sideBackground;
+        text-underline-position: under;
+        &:active {
+          color: $sideBackground;
+          text-decoration: 1px wavy underline $sideBackground;
+          background: $sideColor;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* 1.  Mobile / Tablet view - (.mobile/.mobile-wrapper m.fl.) */
+  /* TOP MOBILE/TABLETVIEW */
+  .mobile-bar {
+    display: block;
+    height: 100%;
+    & img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 1rem 2rem;
+      display: inline;
+    }
+    &__text {
+      display: inline-block;
+      font-size: 2.5vw;
+    }
+  }
+  .mobile-wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    @include mainFont;
+    background: $sideBackground;
+    h1 {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-position: under;
+      letter-spacing: 0.2rem;
+
+      margin-bottom: 0.5rem;
+    }
+    & h1,
+    & h5,
+    & p {
+      text-transform: uppercase;
+      font-weight: 200;
+      text-align: center;
+    }
+    h1 {
+      font-size: 4vw;
+      color: $sideColor;
+    }
+    & h5 {
+      letter-spacing: 0.1rem;
+      font-size: 1.5vw;
+      color: $mainColor;
+      margin-bottom: 0.6rem;
+    }
+    & p {
+      font-size: 1.8vw;
+      padding: 0rem 0.2rem;
+      text-transform: none;
+      @include secondFont;
+      display: inline-block;
+      color: $mainColor;
+      &:first-of-type:hover {
+        color: $sideColor;
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+      &:first-of-type i {
+        font-weight: 400;
+        padding: 0rem 0.1rem;
+        @include secondFont;
+        &:hover {
+          text-decoration: underline;
+          text-underline-position: under;
+          cursor: pointer;
+          color: $sideColor;
+        }
+      }
+    }
+
+    &__line {
+      text-decoration: none;
+      font-weight: 100;
+      display: inline-block;
+      color: $mainColor;
+    }
+  }
+  .mobile {
+    display: block;
+    background: $sideBackground;
+  }
+  /* * * * MOBILE MENU * * * */
+  .mobile-bar #mobileView {
+    display: none;
+  }
+  .mobile {
+    &__item {
+      display: block;
+      width: fit-content;
+      margin: 0.5rem auto;
+      padding: 1rem 2rem;
+      font-size: 3vw;
+      &:active {
+        border-top: 1px solid $sideColor;
+        border-bottom: 1px solid $sideColor;
+        padding: 0.93rem 2rem;
+      }
+      &:nth-child(1) {
+        border: 1px solid $sideColor;
+        padding: 1rem 2rem;
+      }
+      a {
+        font-size: 2.6vw;
+        font-weight: 800;
+      }
+    }
+  }
+  .mobile-bar a.side__bar {
+    margin: 0rem;
+    font-size: 2vw;
+  }
+  /* 2. Projekt */
+  .projekt {
+    & section {
+      padding: 1rem;
+    }
+  }
+  /* 2. Content */
+  .content {
+    min-height: auto;
+    & h1 {
+      margin: 0.5rem 0rem;
+    }
+    &__text {
+      font-size: 1.5vw;
+    }
+  }
+}

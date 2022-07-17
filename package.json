@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "name": "mockup",
+  "version": "1.0.0",
+  "description": "a portfolio/CV website",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "keywords": [
+    "Emma",
+    "Forsberg",
+    "Private"
+  ],
+  "author": "Emma Forsberg",
+  "license": "ISC"
+}
